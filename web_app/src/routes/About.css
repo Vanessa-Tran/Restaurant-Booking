@@ -1,0 +1,69 @@
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+  margin-top: 30px;
+}
+.centered {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.card-text-style {
+
+  color : black; 
+  font-family: 'Times New Roman';
+  font-size:20px;
+  font-weight: bold;
+}
+.title-word {
+animation: color-animation 4s linear infinite;
+}
+
+.title-word-1 {
+--color-1: #DF8453;
+--color-2: #3D8DAE;
+--color-3: #E4A9A8;
+}
+
+.title-word-2 {
+--color-1: #DBAD4A;
+--color-2: #9ebe78;
+--color-3: #17494D;
+}
+
+.title-word-3 {
+--color-1: #9ebe78;
+--color-2: #E4A9A8;
+--color-3: #9ebe78;
+}
+
+.title-word-4 {
+--color-1: #3D8DAE;
+--color-2: #DF8453;
+--color-3: #E4A9A8;
+}
+
+@keyframes color-animation {
+0%    {color: var(--color-1)}
+32%   {color: var(--color-1)}
+33%   {color: var(--color-2)}
+65%   {color: var(--color-2)}
+66%   {color: var(--color-3)}
+99%   {color: var(--color-3)}
+100%  {color: var(--color-1)}
+}
+
+.card-img-overlay{
+  margin-top: 238px;
+}
+
+@keyframes fade-in{
+  0% {opacity: 1;}
+  100%{opacity: 0;}
+}
+
+#fade-in{
+  animation: fade-in 2s alternate-reverse;
+}
